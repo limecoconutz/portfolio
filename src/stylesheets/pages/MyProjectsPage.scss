@@ -1,0 +1,77 @@
+@import '../components/_colors.module';
+@import '../components/_carousel';
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+
+.MyProjectsPage {
+  max-width: none;
+  padding-top: 100px;
+  margin: auto;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 1000px) {
+  .MyProjectsPage {
+    max-width: 70%;
+  }
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 567px;
+  width: 484px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $pale-pink;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 900px) {
+  .MyProjectsPage {
+    padding-top: 412px;
+    width: 100vh;
+  }
+
+  .card-category {
+    width: 324px;
+    font-size: 21px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: $pale-pink;
+  font-size: 44px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  transition: 1s;
+  text-shadow: 1px 1px 2px $pale-pink,
+    0 0 25px $linen,
+    0 0 5px $melon;
+}
+
+// .container-website-page{
+//   height: 147vh;
+//   margin-bottom: 42px;
+// }
+
+// .container-carousel {
+//   height: 109vh;
+//   width: 76vh;
+// }
+
+// @media (min-width: 1200px) {
+//   .container-website-page {
+//   height: 118vh;
+//   padding-left: 267px;
+//   }
+// }

@@ -23,6 +23,29 @@
     0 0 5px $melon;
 }
 
+.logo {
+  position: absolute;
+  left: 650px;
+  top: 10px;
+  font-size: 2.5em;
+  padding: 6px;
+  margin: 8px;
+
+}
+
+.logo-bright {
+  color: $linen;
+  border: 1px solid $linen;
+  border-radius: 50%;
+}
+
+.logo-bright:hover {
+  transition: 1s;
+  text-shadow: 1px 1px 2px $pale-pink,
+    0 0 25px $linen,
+    0 0 5px $melon;
+}
+
 .header__container {
   position: absolute;
   bottom: 300px;
@@ -40,6 +63,7 @@
 }
 
 @media (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   .logo {
     position: absolute;
     left: 0px;
@@ -59,11 +83,10 @@
   }
 }
 
-@media (min-width: 760px) and (max-width: 1000px) {}
-
-@media (min-width: 760px) and (max-width: 1000px) {
+@media screen and (min-width: 760px) and (max-width: 1000px) {
   .logo {
     position: absolute;
     left: 0px;
   }
+}
 }

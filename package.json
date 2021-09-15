@@ -1,5 +1,8 @@
 {
+<<<<<<< HEAD
   "homepage": "https://limecoconutz.github.io/portfolio/",
+=======
+>>>>>>> parent of 9960e41e... Updates
   "name": "portfolio-website",
   "version": "0.1.0",
   "private": true,
@@ -18,8 +21,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+<<<<<<< HEAD
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+=======
+>>>>>>> parent of 9960e41e... Updates
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

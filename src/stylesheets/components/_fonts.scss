@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap');
+
+/* font-family: 'Karla', sans-serif;
+font-family: 'Lato', sans-serif; */
+
+.title {
+  font-family: 'Lato', sans-serif;
+}
+
+.text {
+  font-family: 'Karla', sans-serif;
+}
+
+.font--light {
+  font-weight: 100;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.text__bright {
+  color: $linen;
+}
+
+.text__colorful {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  -webkit-text-fill-color: transparent;
+}
+
+.text__dark {
+  color: $cyber-grape;
+}

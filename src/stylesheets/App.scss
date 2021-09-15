@@ -1,13 +1,8 @@
+
 @import 'components/_colors.module';
 @import 'components/fonts';
 @import 'components/_carousel.scss';
 
-.container {
-  // padding: 80px;
-  // padding-left: 380px;
-  // width: 80%;
-  // margin: auto;
-}
 
 .App {
   // background-image: url("https://res.cloudinary.com/dw4xhagfa/image/upload/v1630573498/812556_ioyu4h.jpg");
@@ -45,9 +40,4 @@
 }
 
 
-@media (min-width: 800px) {
-  .App {
-    // height: 100vh;
-    // width: 100%;
-  }
-}
+@media (min-width: 800px) {}

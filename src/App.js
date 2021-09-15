@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import '../src/stylesheets/App.scss';
+import './stylesheets/App.scss';
 import Footer from  './components/Footer';
 import AboutPage from  './pages/AboutPage';
 import LandingPage from './pages/LandingPage';
@@ -15,13 +16,13 @@ function App() {
           <Router>
             <Switch>
               <Route path="/about" component={AboutPage} />
-              <Route path="/portfolio" component={LandingPage} />
+              <Route path="/portfolio" exact component={LandingPage} />
               <Route path="/myprojects" component={MyProjectsPage} />
               <Route path="/skills" component={SkillsPage} />
             </Switch>
             <Sidebar />
           </Router>
-              <Footer />
+        <Footer />
       </div>
 
   );
