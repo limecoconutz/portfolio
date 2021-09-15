@@ -10,15 +10,11 @@ function AboutPage() {
 
   const backgroundColorHandler = () => {
     const currentColor = allColors[getRandomInt(allColors.length)];
-    if(currentColor === '#fff1e6ff' || currentColor === '#fde2e4ff'){
-    return {backgroundColor: `${currentColor}`, color: `#535166ff`} }
+    if(currentColor==='rgb(255, 241, 230)' || currentColor==='rgb(253, 226, 228)'){
+    return {backgroundColor: `${currentColor}`, color: `rgb(83, 81, 102)`} }
     else {
       return {backgroundColor: `${currentColor}`};
     }
-  }
-
-  const scrollHandler = () => {
-
   }
 
   return (
