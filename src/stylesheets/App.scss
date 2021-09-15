@@ -1,38 +1,53 @@
+@import 'components/_colors.module';
+@import 'components/fonts';
+@import 'components/_carousel.scss';
+
+.container {
+  // padding: 80px;
+  // padding-left: 380px;
+  // width: 80%;
+  // margin: auto;
+}
+
 .App {
-  text-align: center;
+  // background-image: url("https://res.cloudinary.com/dw4xhagfa/image/upload/v1630573498/812556_ioyu4h.jpg");
+  // background-size: cover;
+  // background-position: center;
+  // width: 100vh;
+  // height: 100vh;
+  // min-height: 160vh;
+  // min-width: 76vh;
+  padding: 0;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  position: absolute;
+  left: 650px;
+  top: 10px;
+  font-size: 2.5em;
+  padding: 6px;
+  margin: 8px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-bright {
+  color: $linen;
+  border: 1px solid $linen;
+  border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo-bright:hover {
+  transition: 1s;
+  text-shadow: 1px 1px 2px $pale-pink,
+    0 0 25px $linen,
+    0 0 5px $melon;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 800px) {
+  .App {
+    // height: 100vh;
+    // width: 100%;
   }
 }
