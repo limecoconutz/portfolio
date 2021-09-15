@@ -3,7 +3,7 @@ import '../stylesheets/components/Sidebar.scss';
 
 function Sidebar() {
   return (
-  <section className="sidebar">
+  // <section className="sidebar">
         <nav className="Sidebar">
           <ul className="nav-links list"> 
             <NavLink to='MyProjects' exact className="nav-link" activeClassName="selected">
@@ -17,7 +17,7 @@ function Sidebar() {
               </NavLink>
             </ul>
         </nav>
-    </section>
+    // </section>
   );
 }
 
