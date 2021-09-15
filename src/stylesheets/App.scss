@@ -41,3 +41,8 @@
 
 
 @media (min-width: 800px) {}
+@media (min-width: 760px) and (max-width: 1000px) {
+  .logo {
+    right: 0px;
+  }
+}

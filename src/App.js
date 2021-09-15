@@ -12,7 +12,7 @@ import Sidebar from './components/Sidebar';
 function App() {
   return (
       <div className="App">
-      <a href="/portfolio"><i className="logo logo-bright fas fa-fan"></i></a>
+      <a className="" href="/portfolio"><i className="logo logo-bright fas fa-fan"></i></a>
           <Router>
             <Switch>
               <Route path="/about" component={AboutPage} />
