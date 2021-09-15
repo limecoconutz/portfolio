@@ -1,0 +1,44 @@
+@import '../components/colors.module';
+
+.Footer {
+  display: flex;
+  padding: 12px;
+  flex-direction: row-reverse;
+  position: fixed;
+  height: 9vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  background-color: $independence;
+  border-top: solid 1px $pale-pink;
+}
+
+@media (min-width: 1200px) {
+  .Footer {
+    padding: 6px;
+    height: 6vh;
+  }
+}
+
+.link {
+  color: $linen;
+  margin-right: 6px;
+  font-size: 1.5em;
+}
+
+.link:hover {
+  transition: 500ms;
+  padding: 1px;
+  border: solid 1px $linen;
+  border-radius: 25px;
+  text-shadow: 1px 1px 2px var(--pale-pink),
+    0 0 25px $linen,
+    0 0 5px $melon;
+}
+
+.fab {
+  font-size: 1.5em;
+  margin: 6px;
+}
