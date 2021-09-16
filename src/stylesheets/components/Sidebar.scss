@@ -17,9 +17,6 @@
 .Sidebar .list .list__elem {
   padding: 8px 16px;
   margin: 6px 12px;
-}
-
-.Sidebar .list .list__elem {
   border-bottom: solid 1px $linen;
 }
 
@@ -43,13 +40,20 @@
 
 @media (max-width: 1000px) {
   .Sidebar {
+    width: 100vh;
+    display: block;
     top: 0px;
+    background-color: $independence;
   }
 
   .Sidebar .list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
-    font-size: 1.7em;
+    padding: 0;
+    font-size: 1rem;
+  }
+  .Sidebar .list .list__elem{
+    border-bottom: none;
+    border-right: solid 1px $linen;
   }
 }
