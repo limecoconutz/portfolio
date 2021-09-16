@@ -1,3 +1,5 @@
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 import '../stylesheets/pages/AboutPage.scss';
 import colors from '../stylesheets/components/_colors.module.scss';
 import {storyTravel, storyDev, storyFreeTime} from '../data/story';
@@ -7,15 +9,15 @@ function AboutPage() {
   console.log(storyTravel);
   const getRandomInt = (max) =>Math.floor(Math.random() * max);
   const allColors = Object.values(colors);
+  const backgroundColorHandler = () =>  `${allColors[getRandomInt(allColors.length)]}`;
 
-  const backgroundColorHandler = () => {
-    const currentColor = allColors[getRandomInt(allColors.length)];
-    if(currentColor==='rgb(255, 241, 230)' || currentColor==='rgb(253, 226, 228)'){
-    return {backgroundColor: `${currentColor}`, color: `rgb(83, 81, 102)`} }
-    else {
-      return {backgroundColor: `${currentColor}`};
-    }
-  }
+  // const  scrollToSection = (area) => {
+  //   scroller.scrollTo(area, {
+  //     duration: 800,
+  //     delay: 0,
+  //     smooth: "easeInOutQuart",
+  //   });
+  // };
 
   return (
     <div className="AboutPage">
@@ -23,18 +25,18 @@ function AboutPage() {
         <h1 className="title text__bright" style={{textAlign: 'center', fontWeight: '200'}}>About me</h1>
       </header>
       <div className="scroll-container">
-         <section className="scroll-area" id="area1" style={backgroundColorHandler()}>
+         <section className="scroll-area area_1" id="area1" style={{backgroundColor: `${backgroundColorHandler()}`}}>
            <div className="scroll-area-infos">
              <img className="scroll-area-img" src="https://res.cloudinary.com/dw4xhagfa/image/upload/v1631621039/how-to-draw-a-witch-colour-background_cmyu7d.webp"/>
              <h2 className="text scroll-area-title">
                Hi! <br/>My name is Cosmina <br/>I am a fullstack web developer
               </h2>
            </div>
-          <span className="scroll-area-btn">
+          <a className="scroll-area-btn" onClick={()=>scroll.scrollTo("area_2")}>
             <i class="fas fa-angle-double-down"></i>
-          </span>
+          </a>
          </section>
-         <section className="scroll-area"  id="area2" style={backgroundColorHandler()}>
+         <section className="scroll-area area_2"  id="area2" style={{backgroundColor: `${backgroundColorHandler()}`}}>
            <div className="scroll-area-infos">
              <div className="scroll-area-infos-elem">
               <img className="scroll-area-icon-medium " src="https://cdn-icons-png.flaticon.com/512/3175/3175239.png"/>
@@ -49,11 +51,11 @@ function AboutPage() {
                   </h3>
                   </div>
            </div>
-          <span className="scroll-area-btn">
+          <a className="scroll-area-btn">
             <i class="fas fa-angle-double-down"></i>
-          </span>
+          </a>
          </section>
-          <section className="scroll-area" id="area3" style={backgroundColorHandler()}>
+          <section className="scroll-area area_3" id="area3" style={{backgroundColor: `${backgroundColorHandler()}`}}>
             <div className="scroll-area-infos">
               <div className="scroll-area-infos-elem">
                 <img className="scroll-area-icon-medium" src="https://cdn-icons-png.flaticon.com/512/3069/3069194.png"/>
@@ -70,7 +72,7 @@ function AboutPage() {
             <i class="fas fa-angle-double-down"></i>
           </span>
           </section>
-          <section className="scroll-area" id="area4" style={backgroundColorHandler()}>
+          <section className="scroll-area area_4" id="area4" style={{backgroundColor: `${backgroundColorHandler()}`}}>
               <div className="scroll-area-infos">
                 <div className="scroll-area-infos-elem">
                   <img className="scroll-area-icon-medium" src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png"/>
@@ -84,7 +86,7 @@ function AboutPage() {
             <i class="fas fa-angle-double-down"></i>
           </span>
           </section>
-          <section className="scroll-area" id="area5" style={backgroundColorHandler()}>
+          <section className="scroll-area area_5" id="area5" style={{backgroundColor: `${backgroundColorHandler()}`}}>
             <div className="scroll-area-infos">
               <div className="scroll-area-infos-elem">
                  <h3 className="title scroll-area-title" style={{marginLeft: '8px', marginBottom:'0'}}>In my free time, I like to</h3>
@@ -95,7 +97,7 @@ function AboutPage() {
             <i class="fas fa-angle-double-down"></i>
           </span>
           </section>
-          <section className="scroll-area" id="area6" style={backgroundColorHandler()}>
+          <section className="scroll-area area_6" id="area6" style={{backgroundColor: `${backgroundColorHandler()}`}}>
             <div className="scroll-area-infos">
             <h3 className="title scroll-area-title">
               Thank you for your attention
