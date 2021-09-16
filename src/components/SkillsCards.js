@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import LogosElem from "./LogosElem";
 import softSkills from '../data/skills';
 

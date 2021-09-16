@@ -16,16 +16,16 @@ function ProjectCard({website}) {
                       <h2 className="title text__bright">{website.name}</h2>
                      <p className="text text__bright">{website.description}</p>
                    </div>
-                     <a href={website.githubLink} className=""  target="_blank">
+                     <a href={website.githubLink} className=""  target="_blank" rel="noreferrer">
                        <i className="carousel-card-logo fab fa-github"></i>
                      </a>
                  {website.demo?
-                        <a href={website.demo} className=""  target="_blank">
+                        <a href={website.demo} className=""  target="_blank" rel="noreferrer">
                           <i className="carousel-card-logo fab fa-youtube"></i>
                         </a>
                     :''}
                     {website.pageLink?
-                        <a href={website.pageLink} className="" target="_blank">               
+                        <a href={website.pageLink} className="" target="_blank" rel="noreferrer">               
                           <i className="carousel-card-logo fas fa-paperclip"></i>
                         </a>
                     :''}

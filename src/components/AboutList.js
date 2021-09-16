@@ -4,7 +4,7 @@ function AboutList({story}) {
       {
         story.map(el => (
           <li key={el.id}>
-            <img className="scroll-area-icon-small" src={el.img}/>
+            <img className="scroll-area-icon-small" src={el.img} alt="icon"/>
             <p className="text" style={{fontSize:'1rem'}}>{el.text}</p>
           </li>
         ))
