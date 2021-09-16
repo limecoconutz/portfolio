@@ -10,7 +10,7 @@
 
 # production
 /build
-.eslintcache
+node_modules/ .cache/ .eslintcache
 
 # misc
 .DS_Store
