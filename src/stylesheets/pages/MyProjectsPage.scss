@@ -21,7 +21,8 @@
   background-size: cover;
   background-position: center;
   height: 567px;
-  width: 484px;
+  width: 80%;
+  // width: 484px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,12 +36,13 @@
 
 @media screen and (max-width: 900px) {
   .MyProjectsPage {
-    padding-top: 412px;
+    padding-top: 212px;
     width: 100vh;
+    height: 90vh;
   }
 
   .card-category {
-    width: 324px;
+    // width: 20%;
     font-size: 21px;
   }
 }
@@ -49,6 +51,10 @@
 .slick-next:before {
   color: $pale-pink;
   font-size: 44px;
+}
+
+.slick-prev {
+  left: 2px;
 }
 
 .slick-prev:hover,

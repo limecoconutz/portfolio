@@ -145,7 +145,7 @@
 
 .about-notes {
   position: absolute;
-  bottom: 100px;
+  // bottom: 100px;
   right: 0;
 }
 
@@ -166,6 +166,25 @@
   font-size: 4rem;
 }
 
+@media (max-width: 900px) {
+  .scroll-area{
+    padding-top: 20px;
+    min-height: 70vh;
+  }
+
+  .scroll-area-subtitle{
+    font-size: 1.4rem;
+  }
+
+  .scroll-area-title{
+    font-size: 1.8rem;
+  }
+
+  .scroll-area-icon-small{
+    height: 60px;
+    width: 60px;
+  }
+}
 // .scroll-area-btn span {
 //   // position: absolute;
 //   // top: 0;
@@ -191,6 +210,10 @@ a {
   .AboutPage {
     height: 100vh;
     /* margin: auto; */
-    margin-top: 46vh;
+    margin-top: 15vh;
+  }
+
+  .scroll-container {
+    max-width: 90%;
   }
 }

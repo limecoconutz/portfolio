@@ -25,22 +25,22 @@ const storyDev = [
   {
     id: 1,
     img: 'https://cdn-icons-png.flaticon.com/512/1000/1000322.png',
-    text: 'Co-opting friends who work as developers to help me'
+    text: 'Co-opted friends who work as developers to help me learn'
   },
     {
     id: 2,
     img: 'https://img-premium.flaticon.com/png/512/4650/premium/4650607.png?token=exp=1631611043~hmac=d419e6e028e074a925a258a21f918335',
-    text: 'Completing online courses, and coding every single day'
+    text: 'Completed online courses, and practiced every single day'
   },
     {
     id: 3,
     img: 'https://dwj199mwkel52.cloudfront.net/assets/lewagon-logo-square-b6124eb974be375884558e4464efce48a9b5664f18422768156364363ecdd1fc.png',
-    text: 'Completing the LeWagon fullstack web developer bootcamp'
+    text: 'Graduated from the LeWagon bootcamp'
   },
     {
     id: 4,
     img: 'https://cdn-icons-png.flaticon.com/512/876/876019.png',
-    text: 'Joining Salt, completing the intesive bootcamp and becoming a fullstack web developer.'
+    text: 'Graduated from the </salt> bootcamp.'
   },
 ]
 

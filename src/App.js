@@ -12,11 +12,11 @@ import Sidebar from './components/Sidebar';
 function App() {
   return (
       <div className="App">
-      <a className="" href="/portfolio"><i className="logo logo-bright fas fa-fan"></i></a>
+      <a className="" href="/"><i className="logo logo-bright fas fa-fan"></i></a>
           <Router>
             <Switch>
               <Route path="/about" component={AboutPage} />
-              <Route path="/portfolio" exact component={LandingPage} />
+              <Route path="/" exact component={LandingPage} />
               <Route path="/myprojects" component={MyProjectsPage} />
               <Route path="/skills" component={SkillsPage} />
             </Switch>

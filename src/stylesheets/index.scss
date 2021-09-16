@@ -5,8 +5,13 @@
 body {
   margin: auto;
   padding: 0;
-  max-height: 90vh;
-  min-width: 100vh;
+  // max-height: 90vh;
+  // min-width: 100vh;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
 }
 
 html {
@@ -16,6 +21,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 a {

@@ -21,9 +21,9 @@ function AboutPage() {
 
   return (
     <div className="AboutPage">
-      <header>
+      {/* <header>
         <h1 className="title text__bright" style={{textAlign: 'center', fontWeight: '200'}}>About me</h1>
-      </header>
+      </header> */}
       <div className="scroll-container">
          <section className="scroll-area area_1" id="area1" style={{backgroundColor: `${backgroundColorHandler()}`}}>
            <div className="scroll-area-infos">
@@ -63,7 +63,7 @@ function AboutPage() {
                    I used to work in travel
                 </h3>
               </div>
-              <h3 className="title" style={{fontWeight:'300', fontSize: '1.8rem', marginTop:'0', marginBottom:'0'}}>
+              <h3 className="title scroll-area-subtitle" style={{fontWeight:'300', marginTop:'0', marginBottom:'0'}}>
               Throughout my career, I have been: </h3>
                 <AboutList story={storyTravel}/>
               <p className="text">and much more...</p>
@@ -77,7 +77,7 @@ function AboutPage() {
                 <div className="scroll-area-infos-elem">
                   <img className="scroll-area-icon-medium" src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png"/>
                   <h2 className="title scroll-area-title" style={{marginLeft: '8px', marginBottom:'0'}}>
-                    My path to becoming a developer has involved:
+                    My path to becoming a developer:
                   </h2>
                 </div>
                 <AboutList story={storyDev}/>
