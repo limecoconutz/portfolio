@@ -30,9 +30,9 @@ function AboutPage() {
                Hi! <br/>My name is Cosmina <br/>I am a fullstack web developer
               </h2>
            </div>
-          <a href="#area2" className="scroll-area-btn">
+          <span className="scroll-area-btn">
             <i class="fas fa-angle-double-down"></i>
-          </a>
+          </span>
          </section>
          <section className="scroll-area"  id="area2" style={backgroundColorHandler()}>
            <div className="scroll-area-infos">
@@ -49,9 +49,9 @@ function AboutPage() {
                   </h3>
                   </div>
            </div>
-          <a href="#area3" className="scroll-area-btn">
+          <span className="scroll-area-btn">
             <i class="fas fa-angle-double-down"></i>
-          </a>
+          </span>
          </section>
           <section className="scroll-area" id="area3" style={backgroundColorHandler()}>
             <div className="scroll-area-infos">
@@ -66,9 +66,9 @@ function AboutPage() {
                 <AboutList story={storyTravel}/>
               <p className="text">and much more...</p>
             </div>
-          <a href="#area4" className="scroll-area-btn">
+          <span className="scroll-area-btn">
             <i class="fas fa-angle-double-down"></i>
-          </a>
+          </span>
           </section>
           <section className="scroll-area" id="area4" style={backgroundColorHandler()}>
               <div className="scroll-area-infos">
@@ -80,9 +80,9 @@ function AboutPage() {
                 </div>
                 <AboutList story={storyDev}/>
             </div>
-          <a href="#area5" className="scroll-area-btn">
+          <span className="scroll-area-btn">
             <i class="fas fa-angle-double-down"></i>
-          </a>
+          </span>
           </section>
           <section className="scroll-area" id="area5" style={backgroundColorHandler()}>
             <div className="scroll-area-infos">
@@ -91,9 +91,9 @@ function AboutPage() {
               </div>
               <AboutList story={storyFreeTime} />
             </div> 
-          <a href="#area6" className="scroll-area-btn">
+          <span className="scroll-area-btn">
             <i class="fas fa-angle-double-down"></i>
-          </a>
+          </span>
           </section>
           <section className="scroll-area" id="area6" style={backgroundColorHandler()}>
             <div className="scroll-area-infos">
@@ -101,9 +101,9 @@ function AboutPage() {
               Thank you for your attention
             </h3>
             </div>
-            <a href="#area1" className="scroll-area-btn">
+            <span className="scroll-area-btn">
               <i class="fas fa-angle-double-up"></i>
-            </a>
+            </span>
           </section>
         </div>
         <div>
