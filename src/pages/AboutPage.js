@@ -1,9 +1,10 @@
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import {animateScroll as scroll} from 'react-scroll'
+import {Link} from 'react-scroll'
 import '../stylesheets/pages/AboutPage.scss';
 import colors from '../stylesheets/components/_colors.module.scss';
 import {storyTravel, storyDev, storyFreeTime} from '../data/story';
 import AboutList from '../components/AboutList';
+import ScrollAreaStory from '../components/ScrollAreaStory';
 
 function AboutPage() {
   console.log(storyTravel);
@@ -11,19 +12,8 @@ function AboutPage() {
   const allColors = Object.values(colors);
   const backgroundColorHandler = () =>  `${allColors[getRandomInt(allColors.length)]}`;
 
-  // const  scrollToSection = (area) => {
-  //   scroller.scrollTo(area, {
-  //     duration: 800,
-  //     delay: 0,
-  //     smooth: "easeInOutQuart",
-  //   });
-  // };
-
   return (
     <div className="AboutPage">
-      {/* <header>
-        <h1 className="title text__bright" style={{textAlign: 'center', fontWeight: '200'}}>About me</h1>
-      </header> */}
       <div className="scroll-container">
          <section className="scroll-area area_1" id="area1" style={{backgroundColor: `${backgroundColorHandler()}`}}>
            <div className="scroll-area-infos">
@@ -32,8 +22,9 @@ function AboutPage() {
                Hi! <br/>My name is Cosmina <br/>I am a fullstack web developer
               </h2>
            </div>
-          <span className="scroll-area-btn" onClick={()=>scroll.scrollTo("area_2")}>
-            <i class="fas fa-angle-double-down"></i>
+          {/* <a href="#area2" className="scroll-area-btn" onClick={()=>scroll.scrollTo("area_2")}> */}
+          <span className="scroll-area-btn">
+            <i className="fas fa-angle-double-down"></i>
           </span>
          </section>
          <section className="scroll-area area_2"  id="area2" style={{backgroundColor: `${backgroundColorHandler()}`}}>
@@ -52,49 +43,36 @@ function AboutPage() {
                   </div>
            </div>
           <span className="scroll-area-btn">
-            <i class="fas fa-angle-double-down"></i>
+            <i className="fas fa-angle-double-down"></i>
           </span>
          </section>
           <section className="scroll-area area_3" id="area3" style={{backgroundColor: `${backgroundColorHandler()}`}}>
-            <div className="scroll-area-infos">
-              <div className="scroll-area-infos-elem">
-                <img className="scroll-area-icon-medium" src="https://cdn-icons-png.flaticon.com/512/3069/3069194.png"  alt="icon"/>
-                <h3 className="title scroll-area-title">
-                   I used to work in travel
-                </h3>
-              </div>
-              <h3 className="title scroll-area-subtitle" style={{fontWeight:'300', marginTop:'0', marginBottom:'0'}}>
-              Throughout my career, I have been: </h3>
-                <AboutList story={storyTravel}/>
-              <p className="text">and much more...</p>
-            </div>
+            <ScrollAreaStory 
+                  img={"https://cdn-icons-png.flaticon.com/512/3069/3069194.png"}
+                  title="I used to work in travel"
+                  subtitle="Throughout my career, I have been: "
+                  story={storyTravel}/>
           <span className="scroll-area-btn">
-            <i class="fas fa-angle-double-down"></i>
+            <i className="fas fa-angle-double-down"></i>
           </span>
           </section>
           <section className="scroll-area area_4" id="area4" style={{backgroundColor: `${backgroundColorHandler()}`}}>
-              <div className="scroll-area-infos">
-                <div className="scroll-area-infos-elem">
-                  <img className="scroll-area-icon-medium" src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="icon"/>
-                  <h2 className="title scroll-area-title" style={{marginLeft: '8px', marginBottom:'0'}}>
-                    My path to becoming a developer:
-                  </h2>
-                </div>
-                <AboutList story={storyDev}/>
-            </div>
+              <ScrollAreaStory 
+                img="https://cdn-icons-png.flaticon.com/512/2920/2920277.png"
+                title="My path to becoming a developer:"
+                story={storyDev}
+              />
           <span className="scroll-area-btn">
-            <i class="fas fa-angle-double-down"></i>
+            <i className="fas fa-angle-double-down"></i>
           </span>
           </section>
           <section className="scroll-area area_5" id="area5" style={{backgroundColor: `${backgroundColorHandler()}`}}>
-            <div className="scroll-area-infos">
-              <div className="scroll-area-infos-elem">
-                 <h3 className="title scroll-area-title" style={{marginLeft: '8px', marginBottom:'0'}}>In my free time, I like to</h3>
-              </div>
-              <AboutList story={storyFreeTime} />
-            </div> 
+            <ScrollAreaStory 
+            title="In my free time, I like to:"
+            story={storyFreeTime}
+            />
           <span className="scroll-area-btn">
-            <i class="fas fa-angle-double-down"></i>
+            <i className="fas fa-angle-double-down"></i>
           </span>
           </section>
           <section className="scroll-area area_6" id="area6" style={{backgroundColor: `${backgroundColorHandler()}`}}>
@@ -104,13 +82,13 @@ function AboutPage() {
             </h3>
             </div>
             <span className="scroll-area-btn">
-              <i class="fas fa-angle-double-up"></i>
+              <i className="fas fa-angle-double-up"></i>
             </span>
           </section>
         </div>
         <div>
           <section className="text text__bright about-notes">
-            <p>*This app was created by using <i class="fab fa-react"></i> and <i class="fab fa-sass"></i> </p>
+            <p>*This app was created by using <i className="fab fa-react"></i> and <i className="fab fa-sass"></i> </p>
             <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
           </section>
         </div>

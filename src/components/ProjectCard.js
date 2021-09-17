@@ -44,16 +44,16 @@ function ProjectCard({website}) {
   //                     <h2 className="title text__bright">{website.name}</h2>
   //                     <p className="text text__bright">{website.description}</p>
   //                   </div>
-  //                   <i class="carousel-card-logo fab fa-github">
+  //                   <i className="carousel-card-logo fab fa-github">
   //                     <a href={website.githubLink} className=""  target="_blank"></a>
   //                   </i>
   //                   {website.demo?
-  //                   <i class="carousel-card-logo fab fa-youtube">
+  //                   <i className="carousel-card-logo fab fa-youtube">
   //                       <a href={website.demo} className=""  target="_blank"></a>
   //                   </i>
   //                   :''}
   //                   {website.pageLink?
-  //                   <i class="carousel-card-logo fas fa-paperclip">
+  //                   <i className="carousel-card-logo fas fa-paperclip">
   //                       <a href={website.pageLink} className="" target="_blank">               
   //                   </a>
   //                   </i>
@@ -69,16 +69,16 @@ function ProjectCard({website}) {
   //     <h3 className="title text__dark">{website.name}</h3>
   //   {/* <div className="carousel-card-infos"> */}
   //     <p className="text text__dark">{website.description}</p>
-  //     <i class="carousel-card-logo fab fa-github">
+  //     <i className="carousel-card-logo fab fa-github">
   //     <a href={website.githubLink} className=""  target="_blank"></a>
   //       </i>
   //       {website.demo?
-  //        <i class="carousel-card-logo fab fa-youtube">
+  //        <i className="carousel-card-logo fab fa-youtube">
   //            <a href={website.demo} className=""  target="_blank"></a>
   //        </i>
   //        :''}
   //        {website.pageLink?
-  //        <i class="carousel-card-logo fas fa-paperclip">
+  //        <i className="carousel-card-logo fas fa-paperclip">
   //            <a href={website.pageLink} className="" target="_blank">               
   //        </a>
   //        </i>

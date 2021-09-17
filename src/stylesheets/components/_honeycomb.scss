@@ -1,5 +1,5 @@
 // $block: '.wrapper-grid';
-$amount: 4;
+$amount: 6;
 
 // @mixin grid-item($amount) {
 //   @for $i from 1 through $amount {
@@ -208,11 +208,11 @@ $amount: 4;
   font-weight: bold;
 }
 
-// @media (max-width: 800px) {
-//   .wrapper-grid{
-//     --ammount: 4;
-//   }
-// }
+@media (max-width: 800px) {
+  .wrapper-grid{
+    --ammount: 4;
+  }
+}
 
 @media (min-width: 1200px) {
   .wrapper-grid__elem {
