@@ -1,5 +1,5 @@
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import {Link} from 'react-scroll'
+import {Link,  animateScroll as scroll} from 'react-scroll'
 import '../stylesheets/pages/AboutPage.scss';
 import colors from '../stylesheets/components/_colors.module.scss';
 import {storyTravel, storyDev, storyFreeTime} from '../data/story';
@@ -12,6 +12,10 @@ function AboutPage() {
   const allColors = Object.values(colors);
   const backgroundColorHandler = () =>  `${allColors[getRandomInt(allColors.length)]}`;
 
+    const scrollMore = () => {
+    scroll.scrollMore(100);
+  }
+
   return (
     <div className="AboutPage">
       <div className="scroll-container">
@@ -22,10 +26,9 @@ function AboutPage() {
                Hi! <br/>My name is Cosmina <br/>I am a fullstack web developer
               </h2>
            </div>
-          {/* <a href="#area2" className="scroll-area-btn" onClick={()=>scroll.scrollTo("area_2")}> */}
-          <span className="scroll-area-btn">
+          <a to="area_6" className="scroll-area-btn" onClick={scrollMore}>
             <i className="fas fa-angle-double-down"></i>
-          </span>
+          </a>
          </section>
          <section className="scroll-area area_2"  id="area2" style={{backgroundColor: `${backgroundColorHandler()}`}}>
            <div className="scroll-area-infos">
