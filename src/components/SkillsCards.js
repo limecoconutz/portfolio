@@ -1,6 +1,7 @@
 import LogosElem from "./LogosElem";
 import softSkills from '../data/skills';
 
+
 function SkillsCards() {
 
   return ( 

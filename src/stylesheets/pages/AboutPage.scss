@@ -149,6 +149,31 @@
   right: 0;
 }
 
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+
+.bounce {
+  animation: bounce 3s infinite;
+  font-size: 4rem;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+    text-shadow: 1px 1px 2px $pale-pink,
+    0 0 25px $linen,
+    0 0 5px $melon;
+  }
+}
+
 .scroll-area-btn {
   // margin-top: 60px;
   // scroll-snap-align: start;
@@ -157,14 +182,14 @@
   font-size: 3rem;
 }
 
-.scroll-area-btn:hover {
-  transition-timing-function: ease-in-out;
-  transition: 1000ms;
-  text-shadow: 1px 1px 2px $pale-pink,
-    0 0 25px $linen,
-    0 0 5px $melon;
-  font-size: 4rem;
-}
+// .scroll-area-btn:hover {
+//   transition-timing-function: ease-in-out;
+//   transition: 1000ms;
+//   // text-shadow: 1px 1px 2px $pale-pink,
+//   //   0 0 25px $linen,
+//   //   0 0 5px $melon;
+//   // font-size: 4rem;
+// }
 
 @media (max-width: 900px) {
   .scroll-area{
