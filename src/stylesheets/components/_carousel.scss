@@ -1,78 +1,47 @@
 @import './colors.module';
 
-.carousel-card {
-  // border-radius: 25px;
-  //for slick:
-  width: 60vh;
-  height: 40vh;
-  // height: 40vh;
-  // width: 60vh;
-  overflow: hidden;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 20px 20px 0px 0px;
-}
+// .carousel-card {
+//   // border-radius: 25px;
+//   //for slick:
+//   width: 60vh;
+//   height: 40vh;
+//   // height: 40vh;
+//   // width: 60vh;
+//   overflow: hidden;
+//   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+//   border-radius: 20px 20px 0px 0px;
+// }
 
-.carousel-card-wrapper {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
+// .carousel-card-wrapper {
+//   overflow: hidden;
+//   background: white;
+//   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+// }
 
-.carousel-card__img {
-  height: 400px;
-  width: 400px;
-  height: 40%;
-  object-fit: cover;
-  object-position: center;
-  margin: 12px;
-  //for slick
-  border-radius: 25px;
-}
+// .carousel-card__img {
+//   height: 400px;
+//   width: 400px;
+//   height: 40%;
+//   object-fit: cover;
+//   object-position: center;
+//   margin: 12px;
+//   //for slick
+//   border-radius: 25px;
+// }
 
-.carousel-card-infos {
-  background-color: $independence;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  position: relative;
-  //for slick
-}
+// .carousel-card-wrapper .carousel-card-infos {
+//   // padding: 16px;
+//   // display: flex;
+//   // justify-content: space-between;
+//   // align-items: flex-end;
+//   // position: relative;
+// }
 
-@media screen and (max-width: 900px) {
-  .carousel-card-infos {
-    font-weight: 100;
-  }
-}
-
-.carousel-card-wrapper .carousel-card-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-}
-
-.carousel-card-logo {
-  color: $pale-pink;
-  padding: 4px;
-  margin: 2px;
-  font-size: 1.5em;
-}
-
-.carousel-card-logo:hover {
-  transition: 1s;
-  text-shadow: 1px 1px 2px $pale-pink,
-    0 0 25px $linen,
-    0 0 5px $melon;
-}
-
-@media (max-width: 900) {
-  .websites-page-container {
-    grid-template-columns: 1fr;
-  }
-}
+// @media (max-width: 900) {
+//   .websites-page-container {
+//     grid-template-columns: 1fr;
+//   }
+// }
 
 // .carousel__container{
 //     position: absolute;

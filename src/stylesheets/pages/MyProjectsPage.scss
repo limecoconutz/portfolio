@@ -7,14 +7,6 @@
   max-width: none;
   padding-top: 100px;
   margin: auto;
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (min-width: 1000px) {
-  .MyProjectsPage {
-    max-width: 70%;
-  }
 }
 
 .card-category {
@@ -33,51 +25,78 @@
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-
-@media screen and (max-width: 900px) {
-  .MyProjectsPage {
-    padding-top: 212px;
-    width: 100vh;
-    height: 90vh;
-  }
-
-  .card-category {
-    // width: 20%;
-    font-size: 21px;
-  }
+.carousel-card-infos {
+  background-color: $independence;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
 }
 
-.slick-prev:before,
-.slick-next:before {
+.carousel-card-logo {
   color: $pale-pink;
-  font-size: 44px;
+  padding: 4px;
+  margin: 2px;
+  font-size: 1.5em;
 }
 
-.slick-prev {
-  left: 2px;
+.carousel-card-logo:hover {
+  transition: 1s;
+  text-shadow: 1px 1px 2px $pale-pink,
+    0 0 25px $linen,
+    0 0 5px $melon;
 }
-
 .slick-prev:hover,
 .slick-next:hover {
   transition: 1s;
   text-shadow: 1px 1px 2px $pale-pink,
     0 0 25px $linen,
     0 0 5px $melon;
+    color: $pale-pink;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: $pale-pink;
 }
 
-// .container-website-page{
-//   height: 147vh;
-//   margin-bottom: 42px;
-// }
+//desktop
+@media screen and (min-width: 1024px) {
+  .MyProjectsPage {
+    max-width: 70%;
+  }
+}
 
-// .container-carousel {
-//   height: 109vh;
-//   width: 76vh;
-// }
+//tablet
+@media screen and (min-width: 600px) and (max-width: 1020px) {
+ .MyProjectsPage {
+    padding-top: 212px;
+    width: 100vh;
+ }
+ .card-category {
+  width: 90%;
+  font-size: 21px;
+}
+}
 
-// @media (min-width: 1200px) {
-//   .container-website-page {
-//   height: 118vh;
-//   padding-left: 267px;
-//   }
-// }
+//mobile
+@media screen and (max-width: 590px) {
+  .MyProjectsPage {
+    // margin-top: 80px;
+    width: 70vh;
+    // height: 50vh;
+ }
+ .card-category {
+  font-size: 21px;
+  height: 50vh;
+  // height: 100%;
+  }
+  .carousel-card-infos{
+    padding: 0;
+    padding-left: 6px;
+    font-weight: 150;
+    font-size: 1rem;
+  }
+}
+

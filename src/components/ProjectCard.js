@@ -1,5 +1,4 @@
 function ProjectCard({website}) {
-
   const backgroundHandler = (image) => {
     let style;
     image? 
