@@ -40,10 +40,16 @@
 
 @media (max-width: 1000px) {
   .Sidebar {
-    width: 100vh;
+    // max-width: 50vh;
     display: block;
     top: 0px;
     background-color: $independence;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid 1px white;
   }
 
   .Sidebar .list {
@@ -54,6 +60,6 @@
   }
   .Sidebar .list .list__elem{
     border-bottom: none;
-    border-right: solid 1px $linen;
+    // border-right: solid 1px $linen;
   }
 }

@@ -9,6 +9,7 @@ function Footer() {
         <a href="https://github.com/limecoconutz" target="_blank" rel="noreferrer" className="link">
           <i className="fab fa-github"></i>
         </a>
+        <p className='text text__bright'>image credit: https://www.uhdpaper.com/</p>
     </div>
   );
 }

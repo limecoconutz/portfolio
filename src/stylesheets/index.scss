@@ -5,21 +5,37 @@
 body {
   margin: auto;
   padding: 0;
-  // max-height: 90vh;
-  // min-width: 100vh;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-html {
-  background: url("https://res.cloudinary.com/dw4xhagfa/image/upload/v1630573498/812556_ioyu4h.jpg") no-repeat center center fixed;
+  background: url("https://res.cloudinary.com/dw4xhagfa/image/upload/v1632215729/minimalist-digital-art-mountain-landscape-night-moon-uhdpaper.com-4K-34_ubyqaa.jpg");
+  //  no-repeat center center fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: $independence;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  // max-height: 90vh;
+  // min-width: 100vh;
+}
+@media screen and (max-width: 797px) {
+  body {
+    background-image: url('https://res.cloudinary.com/dw4xhagfa/image/upload/v1632215733/minimalist-digital-art-mountain-landscape-night-moon-uhdpaper.com-4K-mobile-34_yxyyim.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+html, body {
+    height: 100%;
+    // width: 100vh;
+}
+
+html {
+  
   scroll-behavior: smooth;
   // overflow: hidden;
 }
