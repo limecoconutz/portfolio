@@ -7,11 +7,10 @@
 }
 
 .SkillsPage {
-  margin: auto;
-  display: flex;
+  margin: 20px;
+  padding: 20px;
+    
 }
-
-.skills-container {}
 
 .wrapper {
   margin: auto;
@@ -92,10 +91,6 @@
   font-size: 3.5vw;
 }
 
-// .logos-img {
-//   width: 60px;
-// }
-
 .logos-text {
   padding: 0;
   margin: 0;
@@ -103,17 +98,18 @@
   font-size: 0.6rem;
   text-align: center;
 }
-
-.tools-title {}
-
+// desktop
 @media screen and (min-width: 1000px) {
   .SkillsPage {
-    padding-left: 340px;
+    margin-left: 147px;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .wrapper-elem {
     width: 60vh;
-    margin: 16px;
+    margin: 10px;
+    margin-top: 0px;
   }
 
   .logos-elem {
@@ -142,26 +138,27 @@
   //   top: -51%;
   // }
 }
-
+// mobile
 @media screen and (max-width: 760px) {
   .SkillsPage {
-    padding-top: 250px;
+    padding-top: 30px;
+    margin-top: 20px;
   }
 
-  .wrapper-list__tech-skills {
-    grid-template-columns: 1fr;
-    padding: 113px;
-  }
+  // .wrapper-list__tech-skills {
+  //   grid-template-columns: 1fr;
+  //   padding: 113px;
+  // }
 
-  .wrapper-elem {
-    width: 90vh;
-  }
+  // .wrapper-elem {
+  //   width: 90vh;
+  // }
 
-  .logos {
-    grid-template-columns: repeat(6, 1fr);
-  }
+  // .logos {
+  //   grid-template-columns: repeat(6, 1fr);
+  // }
 }
-
+// tablet
 @media screen and (min-width: 750px) and (max-width: 1000px) {
   .SkillsPage {
     padding-top: 150px;

@@ -81,7 +81,7 @@
 }
 
 //mobile
-@media screen and (max-width: 590px) {
+@media only screen and (max-device-width: 590px) and (orientation: portrait){
   .MyProjectsPage {
     // margin-top: 80px;
     width: 70vh;
@@ -99,4 +99,14 @@
     font-size: 1rem;
   }
 }
+
+// @media only screen and (max-device-width: 590px) and (orientation: landscape){
+//   .MyProjectsPage {
+//     padding-top: 0;
+//   }
+//   .card-category {
+//     font-size: 21px;
+//     width: 50vh;
+//     }
+// }
 

@@ -1,0 +1,108 @@
+// $amount: 6;
+// .wrapper-grid {
+//   position: relative;
+//   left: 0px;
+//   --counter: 1;
+//   display: grid;
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+//   grid-template-columns: repeat(var(--amount), 1fr, 2fr);
+//   grid-gap: 0.3rem 2.5rem;
+//   width: 562px;
+// }
+
+// .wrapper-grid__elem {
+//   grid-column: 1 / span 3;
+//   grid-row: calc(var(--counter) + var(--counter)) / span 2;
+
+//   //columns
+//   @for $i from 1 through $amount {
+//     &:nth-of-type(#{$amount}n + #{$i}) {
+//       grid-column: #{$i + $i - 1} / span 3;
+
+//       @if $i % 2==0 {
+//         grid-row: calc(var(--counter) + var(--counter) - 1) / span 2;
+//       }
+//     }
+//   }
+
+//   //rows
+//   @for $i from 1 through 4 {
+//     &:nth-of-type(n + #{$i * $amount + 1}) {
+//       --counter: #{$i + 1};
+//     }
+//   }
+
+//   clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+//   background-image: linear-gradient(-20deg, rgba(233, 222, 250, 0.5) 0%, rgba(251, 252, 219, 0.4) 100%);
+//   background-size: cover;
+//   background-position: center;
+//   height: 23vh;
+//   width: 23vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .wrapper-grid__elem:hover {
+//   background-image: linear-gradient(-20deg, rgba(233, 222, 250, 1) 0%, rgba(251, 252, 219, 1) 100%);
+//   filter: grayscale(0);
+//   transition: 200ms;
+//   margin: 2px;
+//   box-shadow: 1px 1px 2px $pale-pink,
+//     0 0 25px $linen,
+//     0 0 5px $melon;
+// }
+
+// .wrapper-grid__elem__icon {
+//   font-size: 2.5rem;
+//   color: $cyber-grape;
+//   margin: 0;
+// }
+
+// .wrapper-grid__content {
+//   display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   padding: 4rem 16%;
+//   text-transform: capitalize;
+//   word-wrap: break-word;
+//   text-align: center;
+// }
+
+// .wrapper-grid__text {
+//   font-size: 1rem;
+//   text-align: center;
+//   color: $space-cadet;
+//   text-shadow: rgba(0, 0, 0, 0.1);
+//   font-weight: bold;
+// }
+
+// @media (max-width: 800px) {
+//   .wrapper-grid{
+//     width: 62px;
+//   }
+// }
+
+// @media (min-width: 1200px) {
+//   .wrapper-grid__elem {
+//     height: 25vh;
+//     width: 25vh;
+//   }
+
+//   .wrapper-grid {
+//     position: relative;
+//     right: 0;
+//   }
+// }
+
+// @media (max-width: 760px) {
+//     .wrapper-grid{
+//       grid-template-columns: repeat(2, 1fr, 2fr);
+//     }
+//     .wrapper-grid__elem {
+//       height: 18vh;
+//       width: 18vh;
+//     }
+// }
