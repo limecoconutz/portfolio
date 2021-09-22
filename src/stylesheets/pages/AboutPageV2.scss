@@ -1,6 +1,25 @@
 @import '../components/colors.module';
-@import '../components/AboutPageDesktop.scss';
-@import '../components/AboutPageMobile.scss';
+.AboutPage {
+    margin: auto;
+    height: 80vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-container,
+.scroll-area  {
+
+}
+
+.scroll-container {
+    max-width: 70%;
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: 1px 1px 2px $pale-pink,
+    0 0 25px $linen,
+    0 0 5px $melon;
+}
 
 .scroll-area {
   transition: 500ms;
@@ -10,12 +29,11 @@
   color: $pale-pink;
 }
 
-.scroll-container {
-  scroll-snap-type: y mandatory;
-}
-
 .scroll-area-infos {
+  height: 55vh;
+  padding: 10px;
   display: flex;
+  width: 90%;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
@@ -37,7 +55,7 @@
 
 .scroll-area-infos-elem {
   display: flex;
-  // margin: auto;
+  margin: auto;
 }
 
 .scroll-area-infos-elem:first-child {
@@ -53,6 +71,7 @@
 .scroll-area-title {
   font-weight: 300;
   text-align: center;
+  font-size: 3rem;
   margin-top: 0;
 }
 
@@ -61,15 +80,18 @@
   padding-left: 8px;
   font-weight: 300;
   text-align: left;
+  font-size: 2rem;
 }
 
 .scroll-area-infos-list {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   list-style-type: none;
 }
 
 .scroll-area-infos-list li {
   padding: 10px;
+  max-width: 60%;
   display: flex;
 
   p {
@@ -109,7 +131,7 @@
 }
 
 .about-notes {
-  // position: absolute;
+  position: absolute;
   // bottom: 100px;
   right: 0;
 }

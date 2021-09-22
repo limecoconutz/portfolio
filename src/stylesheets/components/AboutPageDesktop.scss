@@ -1,0 +1,46 @@
+@media screen and (min-width: 1024px) {
+    .AboutPage {
+        height: 80vh;
+        margin-top: 10vh;
+      }
+    .scroll-container,
+    .scroll-area {
+      // max-width: 850px;
+      height: 100vh;
+    }
+    
+    .scroll-container {
+        transition: 500ms;
+        overflow: auto;
+        box-shadow: 1px 1px 2px $pale-pink,
+        0 0 25px $linen,
+        0 0 5px $melon;
+        margin: 0 auto;
+        
+    }
+    
+    .scroll-container::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .scroll-area {
+        scroll-snap-align: start;
+    }
+    .scroll-area-infos {
+        height: 55vh;
+        padding: 20px;
+        width: 90%;
+      }
+      .scroll-area-title {
+        font-size: 3rem;
+      }
+      .scroll-area-subtitle {
+        font-size: 2rem;
+      }
+      .scroll-area-infos-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .scroll-area-infos-list li {
+        max-width: 60%;
+    }
+  }

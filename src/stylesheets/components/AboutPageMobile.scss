@@ -1,0 +1,57 @@
+
+@media only screen and (max-device-width: 590px) and (orientation: portrait){
+    .AboutPage {
+        height: 100vh;
+        margin-top: 15vh;
+    }
+    
+    .scroll-container {
+    width: 100%;
+    }
+    .scroll-area {
+    scroll-snap-align: start;
+    padding: 10px;
+    }
+    .scroll-area-infos {
+        // height: 100vh;
+        padding-top: 10px;
+        width: 48vh;
+      }
+    
+    .scroll-area-infos-elem {
+        // align-items: center;
+        width: 42vh;
+    }
+
+    .scroll-area-infos-list {
+        grid-template-columns: 1fr;
+    }
+    .scroll-area-subtitle{
+      font-size: 1rem;
+    }
+
+    .area2-subtitle {
+        font-size: 1rem;
+    }
+  
+    .scroll-area-title{
+      font-size: 1.5rem;
+    }
+  
+    .scroll-area-icon-small{
+      height: 60px;
+      width: 60px;
+    }
+
+    .scroll-area-infos-list li {
+        width: 100%;
+  }
+
+  .area_6 {
+      height: 100vh;
+  }
+  .area_6 .scroll-area-infos {
+      padding-top: 50%;
+      padding-bottom: 30%;
+  }
+}

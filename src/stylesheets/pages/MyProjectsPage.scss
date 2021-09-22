@@ -1,5 +1,4 @@
 @import '../components/_colors.module';
-@import '../components/_carousel';
 @import "~slick-carousel/slick/slick.scss";
 @import "~slick-carousel/slick/slick-theme.scss";
 
@@ -58,7 +57,12 @@
 }
 .slick-prev:before,
 .slick-next:before {
+  font-size: 2rem;
   color: $pale-pink;
+}
+
+.slick-prev:before {
+  left: 10px;
 }
 
 //desktop
