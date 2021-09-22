@@ -1,0 +1,95 @@
+.wrapper-list__tech-skills {
+    padding-top: 60px;
+    margin: auto;
+    border-top: solid 1px $pale-pink;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper-elem {
+    // background-image: linear-gradient(to top, rgba(253, 252, 251, .7)0%, rgba(226, 209, 195, .7) 100%);
+    // background-image: linear-gradient(to top, rgba(255, 236, 210, .7) 0%, rgba(252, 182, 159, .7) 100%);
+    // background-image: linear-gradient(to bottom, rgba(233, 222, 250, .7) 0%, rgba(251, 252, 219, .7)100%);
+    padding: 10px;
+    color: $independence;
+    // width: 52%;
+}
+
+.wrapper-elem h3 {
+    margin: 0;
+    border-radius: 25px 25px 0 0;
+    background-image: linear-gradient(to left, rgba(233, 222, 250, .8) 0%, rgba(251, 252, 219, .8)100%);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.logos {
+    display: grid;
+    border-radius: 0 0 25px 25px;
+    // padding: 6px;
+    background-image: linear-gradient(to right, rgba(255, 236, 210, 1) 0%, rgba(252, 182, 159, 1) 100%);
+    // background-image: linear-gradient(to left, rgba(233, 222, 250, 1) 0%, rgba(251, 252, 219, 1)100%);
+
+}
+.logos-elem {
+display: flex;
+align-items: center;
+flex-direction: column;
+margin: 6px;
+padding: 12px;
+
+}
+
+// .logos-img {
+//     width: 40px;
+//     height: 40px;
+// }
+
+.logos-text {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+//desktop
+@media screen and (min-width: 840px) {
+    .wrapper-elem {
+        width: 52%;
+    }
+    .logos:hover {
+        transition: 200ms;
+        padding: 2px;
+        box-shadow: 1px 1px 2px $pale-pink,
+        0 0 25px $linen,
+        0 0 5px $melon;
+        background-image: linear-gradient(to bottom, rgba(255, 236, 210, 1) 0%, rgba(252, 182, 159, 1) 100%);
+    }
+    .wrapper-list__tech-skills {
+        flex-direction: column;
+    }
+    .logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+//tablet
+@media screen and (min-width: 480px) and (max-width: 839px) {
+
+}
+
+//mobile
+@media screen and (max-width: 479px) {
+    .wrapper-elem {
+        width: 90%;
+    }
+    .wrapper-list__tech-skills {
+        flex-direction: column;
+    }
+    .backend {
+        border: solid 1px $pale-pink;
+        border-left: 0;
+        border-right: 0;
+    }
+    .logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,178 +1,42 @@
 @import '../components/colors.module';
 @import '../components/_honeycomb.scss';
-@import '../components/Skills.scss';
-
-.d-none {
-  display: none;
-}
-
+@import '../components/wrapperTechSkills';
 .SkillsPage {
-  margin: 20px;
-  padding: 20px;
-    
+    margin: auto;
+    display: flex;
 }
-
 .wrapper {
-  margin: auto;
-  display: grid;
-  width: 100%;
+    margin: auto;
+    width: 80%;
+    border: 1px solid $pale-pink;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 16px;
 }
 
 .wrapper-list {
-  margin: 17px;
-  padding: 14px;
-  max-height: 655px;
+    margin: auto;
+    display: flex;
+    // background-image: linear-gradient(to right, rgba(255, 236, 210, .5) 0%, rgba(252, 182, 159, .5) 100%);
+    // background-image: linear-gradient(to right, rgba(253, 252, 251, .5)0%, rgba(226, 209, 195, .5) 100%);
+    background-image: linear-gradient(to left, rgba(233, 222, 250, .7) 0%, rgba(251, 252, 219, .6)100%);
 }
 
-.wrapper-elem {
-  background-image: linear-gradient(rgba(161, 196, 253, 0.2), rgba(194, 233, 251, 0.3));
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
-  width: 50vh;
-  margin: 6px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  color: $linen;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 2px $pale-pink,
-    0 0 25px $linen,
-    0 0 5px $melon;
+//desktop
+@media screen and (min-width: 840px) {
+.wrapper {
+    margin-left: 200px;
+}
 }
 
-.wrapper-list__tech-skills .wrapper-elem:hover {
-  background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
-  transition: 500ms;
-  padding: 2px;
-  font-size: 2rem;
-  text-decoration: underline;
+//tablet
+@media screen and (min-width: 480px) and (max-width: 839px) {
+
 }
 
-.wrapper-list__tech-skills {
-  display: grid;
-  grid-template-columns: 1fr;
+//mobile
+@media screen and (max-width: 479px) {
+.wrapper {
+    margin-top: 90px;
 }
-
-.wrapper-list__soft-skills {
-  padding-left: 30px;
-}
-
-.toggle__text {
-  transition-timing-function: ease-in-out;
-  transition: 1000ms;
-  text-shadow: 1px 1px 2px $pale-pink,
-    0 0 25px $linen,
-    0 0 5px $melon;
-}
-
-.toggle__text:hover,
-.toggle__text:focus {
-  transition-delay: 200ms;
-  text-decoration: underline;
-}
-
-.logos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 25px;
-  column-gap: 40px;
-  max-width: 100%;
-  max-height: 100%;
-  margin: 12px;
-}
-
-.logos-elem {
-  font-size: 3.5vw;
-}
-
-.logos-text {
-  padding: 0;
-  margin: 0;
-  word-wrap: break-word;
-  font-size: 0.6rem;
-  text-align: center;
-}
-// desktop
-@media screen and (min-width: 1000px) {
-  .SkillsPage {
-    margin-left: 147px;
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  .wrapper-elem {
-    width: 60vh;
-    margin: 10px;
-    margin-top: 0px;
-  }
-
-  .logos-elem {
-    font-size: 1vw;
-  }
-
-  .logos-text {
-    font-size: 1rem;
-  }
-
-  .wrapper-list__tech-skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .wrapper-list__tech-skills .wrapper-elem {
-    width: 50vh;
-  }
-
-  .wrapper-list__soft-skills {
-    padding-left: 150px;
-  }
-
-  // .backend {
-  //   position: relative;
-  //   top: -51%;
-  // }
-}
-// mobile
-@media screen and (max-width: 760px) {
-  .SkillsPage {
-    padding-top: 30px;
-    margin-top: 20px;
-  }
-
-  // .wrapper-list__tech-skills {
-  //   grid-template-columns: 1fr;
-  //   padding: 113px;
-  // }
-
-  // .wrapper-elem {
-  //   width: 90vh;
-  // }
-
-  // .logos {
-  //   grid-template-columns: repeat(6, 1fr);
-  // }
-}
-// tablet
-@media screen and (min-width: 750px) and (max-width: 1000px) {
-  .SkillsPage {
-    padding-top: 150px;
-  }
-
-  .wrapper-elem {
-    width: 35vh;
-    margin: 16px;
-  }
-
-  .wrapper-list__tech-skills {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 113px;
-    padding-left: 80px;
-    margin-left: 120px;
-  }
 }

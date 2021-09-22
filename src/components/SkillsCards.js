@@ -1,18 +1,5 @@
 import LogosElem from "./LogosElem";
 import softSkills from '../data/skills';
-{/* <ul class="hex-grid__list">
-    <li class="hex-grid__item">
-        <div class="hex-grid__content">
-            1
-        </div>
-    </li>
-    <li class="hex-grid__item">
-        <div class="hex-grid__content">
-            2
-        </div>
-    </li>
-    ...
-</ul> */}
 
 function SkillsCards() {
   return ( 

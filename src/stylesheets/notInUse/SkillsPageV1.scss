@@ -1,0 +1,195 @@
+// @import '../components/colors.module';
+// @import '../components/_honeycomb.scss';
+// // @import '../components/Skills.scss';
+
+// .d-none {
+//   display: none;
+// }
+
+// .SkillsPage {
+//   width: 100%;
+//   background-color: $mountbatten-pink;
+//   // padding: 20px;
+// }
+
+// .wrapper {
+//   margin: auto;
+//   display: grid;
+//   width: 100%;
+// }
+
+// .wrapper-list {
+//   border-radius: 25px;
+//   margin: 17px;
+//   margin-left: 25px;
+//   padding: 14px;
+//   max-height: 655px;
+// }
+
+// .wrapper-elem {
+//   // background-image: linear-gradient(rgba(161, 196, 253, 0.2), rgba(194, 233, 251, 0.3));
+//   // background-size: cover;
+//   // background-position: center;
+//   height: 40vh;
+//   width: 50vh;
+//   margin: 6px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-around;
+//   color: $linen;
+//   font-size: 1.5rem;
+//   font-weight: bold;
+//   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+//   // border-radius: 25px;
+//   // box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+//   text-shadow: 1px 1px 2px $pale-pink,
+//   0 0 25px $linen,
+//   0 0 5px $melon;
+//   border-right: 1px solid $pale-pink;
+// }
+
+// // .wrapper-list__tech-skills .wrapper-elem:hover {
+//   //   background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
+//   //   transition: 500ms;
+//   //   padding: 2px;
+//   //   font-size: 2rem;
+//   //   text-decoration: underline;
+//   // }
+  
+//   .wrapper-list__tech-skills {
+//     display: grid;
+//   }
+  
+//   .wrapper-list__soft-skills {
+//     // display: none;
+//     padding-left: 30px;
+//   }
+  
+//   .toggle__text {
+//     transition-timing-function: ease-in-out;
+//     transition: 1000ms;
+//     text-shadow: 1px 1px 2px $pale-pink,
+//     0 0 25px $linen,
+//     0 0 5px $melon;
+//   }
+  
+//   .toggle__text:hover,
+//   .toggle__text:focus {
+//     transition-delay: 200ms;
+//     text-decoration: underline;
+//   }
+  
+//   .logos {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     row-gap: 25px;
+//     column-gap: 40px;
+//     max-width: 100%;
+//     max-height: 100%;
+//     margin: 12px;
+//   }
+  
+//   .logos-elem {
+//     font-size: 3.5vw;
+//   }
+  
+//   .logos-text {
+//     padding: 0;
+//     margin: 0;
+//     word-wrap: break-word;
+//     font-size: 0.6rem;
+//     text-align: center;
+//   }
+//   // desktop
+//   @media screen and (min-width: 840px) {
+//     .SkillsPage {
+//       // margin-left: 147px;
+//       margin-top: 0;
+//       padding-top: 0;
+//       max-width: 350px;
+//     }
+    
+//     .wrapper-elem {
+//       width: 100vh;
+//       margin: 10px;
+//       margin-top: 0px;
+//     }
+    
+//     .logos-elem {
+//       font-size: 1vw;
+//     }
+    
+//     .logos-text {
+//       font-size: 1rem;
+//     }
+    
+//     .wrapper-list__tech-skills {
+//       display: grid;
+//       grid-template-columns: 1fr 1fr 1fr;
+//     }
+    
+//     .wrapper-list__tech-skills .wrapper-elem {
+//       width: 50vh;
+//     }
+    
+//     .wrapper-list__soft-skills {
+//       padding-left: 150px;
+//     }
+//   }
+//   // tablet
+//   @media screen and (min-width: 480px) and (max-width: 839px) {
+//     .SkillsPage {
+//       padding-top: 150px;
+//     }
+    
+//     .wrapper-elem {
+//       width: 35vh;
+//       margin: 16px;
+//     }
+    
+//     .wrapper-list__tech-skills {
+//       grid-template-columns: 1fr 1fr 1fr;
+//       padding: 113px;
+//       padding-left: 80px;
+//       margin-left: 120px;
+//     }
+//   }
+//   // mobile
+//   @media screen and (max-width: 479px) {
+//     .SkillsPage {
+//       padding-top: 30px;
+//       margin-top: 20px;
+//       width: 100vh;
+//     }
+//     .wrapper-list__soft-skills {
+//       padding: 0;
+//       // height: 90vh;
+//       // width: 65vh;
+//     }
+    
+//     .wrapper-list {
+//       width: 300px;
+//       margin: auto;
+//     }
+    
+//     // .wrapper-elem {
+//       //   width: 90vh;
+//       // }
+      
+//       // .logos {
+//         //   grid-template-columns: repeat(6, 1fr);
+//         // }
+//       }
+//       // light
+//       // background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+//       // background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+//       // background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+//       // background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+//       // background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+//       // background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+//       //  background-blend-mode: normal,color-burn;
+//       // dark
+//       // background-image: linear-gradient(to top, $independence 20%, $mountbatten-pink 30%,  $cyber-grape 100%);
+//       // background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+//       // background-image: linear-gradient(to top, #505285 0%, #585e92 12%, #65689f 25%, #7474b0 37%, #7e7ebb 50%, #8389c7 62%, #9795d4 75%, #a2a1dc 87%, #b5aee4 100%);

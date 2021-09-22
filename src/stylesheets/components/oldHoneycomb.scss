@@ -78,31 +78,3 @@
 //   text-shadow: rgba(0, 0, 0, 0.1);
 //   font-weight: bold;
 // }
-
-// @media (max-width: 800px) {
-//   .wrapper-grid{
-//     width: 62px;
-//   }
-// }
-
-// @media (min-width: 1200px) {
-//   .wrapper-grid__elem {
-//     height: 25vh;
-//     width: 25vh;
-//   }
-
-//   .wrapper-grid {
-//     position: relative;
-//     right: 0;
-//   }
-// }
-
-// @media (max-width: 760px) {
-//     .wrapper-grid{
-//       grid-template-columns: repeat(2, 1fr, 2fr);
-//     }
-//     .wrapper-grid__elem {
-//       height: 18vh;
-//       width: 18vh;
-//     }
-// }
