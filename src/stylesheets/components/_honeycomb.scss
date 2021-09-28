@@ -20,10 +20,6 @@ $amount: 6;
 }
 
 #{$block} {
-  // display: flex;
-  // justify-content: center;
-  // width: 100vh;
-
   &__list {
   --amount: 5;
   position: relative;
@@ -34,7 +30,6 @@ $amount: 6;
   margin: auto;
   padding: 10px;
   grid-template-columns: repeat(var(--amount), 1fr, 2fr);
-  // width: 562px;
   max-height: 50vh;
   }
   &__elem {
@@ -42,17 +37,12 @@ $amount: 6;
     grid-row: calc(var(--counter) + var(--counter)) / span 2;
     clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
     background-image: linear-gradient(to right, rgba(255, 236, 210, 1) 0%, rgba(252, 182, 159, 1) 100%);
-    // background-image: linear-gradient(to left, rgba(233, 222, 250, .5) 0%, rgba(251, 252, 219, .5)100%);
-    // background-image: linear-gradient(to right, rgba(253, 252, 251, 1)0%, rgba(226, 209, 195, 1) 100%);
-    // background-image: linear-gradient(to right, rgba(255, 236, 210, 1) 0%, rgba(252, 182, 159, 1) 100%);
-    background-size: cover;
     background-position: center;
     height: 23vh;
     width: 23vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    // opacity: .8;
    }
    &__content {
       display: flex;
@@ -82,7 +72,6 @@ $amount: 6;
 		&__list {
       grid-gap: 1.3rem 2.5rem;
       margin-bottom: 90px;
-      // width: 562px;
 		}
 
 		&__elem {
