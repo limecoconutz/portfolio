@@ -1,4 +1,4 @@
-import {Image, Transformation} from 'cloudinary-react';
+import {Image} from 'cloudinary-react';
 const cloudName = 'dw4xhagfa';
 
 function AboutList({story}) {
@@ -7,7 +7,6 @@ function AboutList({story}) {
       {
         story.map(el => (
           <li key={el.id}>
-            {/* <img className="scroll-area-icon-small" src={el.img} alt="icon"/> */}
             <Image 
             className="scroll-area-icon-medium" 
             cloudName={cloudName} 

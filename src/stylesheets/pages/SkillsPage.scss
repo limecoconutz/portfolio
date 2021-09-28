@@ -8,7 +8,6 @@
 .wrapper {
     margin: auto;
     width: 80%;
-    // border: 1px solid $pale-pink;
     margin-top: 20px;
     margin-bottom: 80px;
     padding: 16px;
@@ -17,9 +16,6 @@
 .wrapper-list {
     margin: auto;
     display: flex;
-    // background-image: linear-gradient(to right, rgba(255, 236, 210, .5) 0%, rgba(252, 182, 159, .5) 100%);
-    // background-image: linear-gradient(to right, rgba(253, 252, 251, .5)0%, rgba(226, 209, 195, .5) 100%);
-    // background-image: linear-gradient(to left, rgba(233, 222, 250, .7) 0%, rgba(251, 252, 219, .6)100%);
 }
 
 //desktop
@@ -36,7 +32,7 @@
 
 //mobile
 @media screen and (max-width: 479px) {
-.wrapper {
-    margin-top: 90px;
-}
+    .wrapper {
+        margin-top: 90px;
+    }
 }

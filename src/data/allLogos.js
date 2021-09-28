@@ -36,7 +36,6 @@ const allLogos = [
   },
   {
     id: 5,
-    // link: 'https://res.cloudinary.com/dw4xhagfa/image/upload/v1630917398/4691205_redux_icon_vnjgec.png',
     publicId: '4691205_redux_icon_vnjgec.png',
     name: 'Redux',
     type: 'Frontend',

@@ -10,78 +10,27 @@ function ProjectCard({website}) {
 
   return (
     <div className="card-category" style={backgroundHandler(website.img)}>
-                 <div className="carousel-card-infos">
-                   <div>
-                      <h2 className="title text__bright">{website.name}</h2>
-                     <p className="text text__bright">{website.description}</p>
-                   </div>
-                     <a href={website.githubLink} className=""  target="_blank" rel="noreferrer">
-                       <i className="carousel-card-logo fab fa-github"></i>
-                     </a>
-                 {website.demo?
-                        <a href={website.demo} className=""  target="_blank" rel="noreferrer">
-                          <i className="carousel-card-logo fab fa-youtube"></i>
-                        </a>
-                    :''}
-                    {website.pageLink?
-                        <a href={website.pageLink} className="" target="_blank" rel="noreferrer">               
-                          <i className="carousel-card-logo fas fa-paperclip"></i>
-                        </a>
-                    :''}
-                  </div>
+        <div className="carousel-card-infos">
+          <div>
+            <h2 className="title text__bright">{website.name}</h2>
+            <p className="text text__bright">{website.description}</p>
+          </div>
+            <a href={website.githubLink} className=""  target="_blank" rel="noreferrer">
+              <i className="carousel-card-logo fab fa-github"></i>
+            </a>
+        {website.demo?
+            <a href={website.demo} className=""  target="_blank" rel="noreferrer">
+              <i className="carousel-card-logo fab fa-youtube"></i>
+            </a>
+          :''}
+          {website.pageLink?
+            <a href={website.pageLink} className="" target="_blank" rel="noreferrer">               
+              <i className="carousel-card-logo fas fa-paperclip"></i>
+            </a>
+          :''}
+        </div>
     </div>
     );
   }
   
   export default ProjectCard;
-  
-  //  <div key={website.id} className="carousel-card" >
-  //             <div className="carousel-card-wrapper">
-  //                 <img className="carousel-card__img"src={website.img} />
-  //                 <div className="carousel-card-infos">
-  //                   <div>
-  //                     <h2 className="title text__bright">{website.name}</h2>
-  //                     <p className="text text__bright">{website.description}</p>
-  //                   </div>
-  //                   <i className="carousel-card-logo fab fa-github">
-  //                     <a href={website.githubLink} className=""  target="_blank"></a>
-  //                   </i>
-  //                   {website.demo?
-  //                   <i className="carousel-card-logo fab fa-youtube">
-  //                       <a href={website.demo} className=""  target="_blank"></a>
-  //                   </i>
-  //                   :''}
-  //                   {website.pageLink?
-  //                   <i className="carousel-card-logo fas fa-paperclip">
-  //                       <a href={website.pageLink} className="" target="_blank">               
-  //                   </a>
-  //                   </i>
-  //                   :''}
-  //                 </div>
-  //               </div>
-  //           </div>
-
-  //V1 of slick:
-  // <div className="carousel-card">
-  //   <div className="carousel-card-wrapper">
-  //   <img className="carousel-card__img"src={website.img} alt={website.name}></img>
-  //     <h3 className="title text__dark">{website.name}</h3>
-  //   {/* <div className="carousel-card-infos"> */}
-  //     <p className="text text__dark">{website.description}</p>
-  //     <i className="carousel-card-logo fab fa-github">
-  //     <a href={website.githubLink} className=""  target="_blank"></a>
-  //       </i>
-  //       {website.demo?
-  //        <i className="carousel-card-logo fab fa-youtube">
-  //            <a href={website.demo} className=""  target="_blank"></a>
-  //        </i>
-  //        :''}
-  //        {website.pageLink?
-  //        <i className="carousel-card-logo fas fa-paperclip">
-  //            <a href={website.pageLink} className="" target="_blank">               
-  //        </a>
-  //        </i>
-  //        :''}
-  //   </div>
-  //   </div>
-  // // </div>

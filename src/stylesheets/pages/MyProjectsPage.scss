@@ -87,14 +87,11 @@
 //mobile
 @media only screen and (max-device-width: 590px) and (orientation: portrait){
   .MyProjectsPage {
-    // margin-top: 80px;
     width: 70vh;
-    // height: 50vh;
  }
  .card-category {
   font-size: 21px;
   height: 50vh;
-  // height: 100%;
   }
   .carousel-card-infos{
     padding: 0;
@@ -103,14 +100,3 @@
     font-size: 1rem;
   }
 }
-
-// @media only screen and (max-device-width: 590px) and (orientation: landscape){
-//   .MyProjectsPage {
-//     padding-top: 0;
-//   }
-//   .card-category {
-//     font-size: 21px;
-//     width: 50vh;
-//     }
-// }
-

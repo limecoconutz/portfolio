@@ -1,18 +1,12 @@
 .wrapper-list__tech-skills {
     padding-top: 60px;
     margin: auto;
-    // border-top: solid 1px $pale-pink;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.wrapper-elem {
-    // background-image: linear-gradient(to top, rgba(253, 252, 251, .7)0%, rgba(226, 209, 195, .7) 100%);
-    // background-image: linear-gradient(to top, rgba(255, 236, 210, .7) 0%, rgba(252, 182, 159, .7) 100%);
-    // background-image: linear-gradient(to bottom, rgba(233, 222, 250, .7) 0%, rgba(251, 252, 219, .7)100%);
-    padding: 10px;
+.wrapper-elem {padding: 10px;
     color: $independence;
-    // width: 52%;
 }
 
 .wrapper-elem h3 {
@@ -26,24 +20,16 @@
 .logos {
     display: grid;
     border-radius: 0 0 25px 25px;
-    // padding: 6px;
     background-image: linear-gradient(to right, rgba(255, 236, 210, 1) 0%, rgba(252, 182, 159, 1) 100%);
-    // background-image: linear-gradient(to left, rgba(233, 222, 250, 1) 0%, rgba(251, 252, 219, 1)100%);
-
 }
+
 .logos-elem {
 display: flex;
 align-items: center;
 flex-direction: column;
 margin: 6px;
 padding: 12px;
-
 }
-
-// .logos-img {
-//     width: 40px;
-//     height: 40px;
-// }
 
 .logos-text {
     padding-top: 0;

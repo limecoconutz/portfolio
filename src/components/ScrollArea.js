@@ -1,5 +1,3 @@
-import ScrollAreaInfos from "./ScrollAreaInfos";
-
 function ScrollArea({areaNumber, backgroundColorHandler}) {
   const nameOfArea = `area_${areaNumber}`;
 
@@ -8,7 +6,6 @@ function ScrollArea({areaNumber, backgroundColorHandler}) {
       id={`${nameOfArea}`}
       style={{backgroundColor: `${backgroundColorHandler()}`}}
     >
-        <ScrollAreaInfos/>
         <span className="scroll-area btn">
           <i className="fas fa-angle-double-down"></i>
         </span>

@@ -1,5 +1,6 @@
-import allLogos from '../data/allLogos';
 import {Image, Transformation} from 'cloudinary-react';
+import allLogos from '../data/allLogos';
+
 const cloudName = 'dw4xhagfa';
 
 function LogosElem({skillType}) {
@@ -8,7 +9,6 @@ function LogosElem({skillType}) {
     <section className="logos">
     {logos.map(logo =>
     <div className="logos-elem " key={logo.id}>
-          {/* <img className="logos-img"  src={logo.link} alt={logo.name}/> */}
           <Image className="logos-img" cloudName={cloudName} secure={true} upload_preset="ml_default" publicId={logo.publicId}> 
             <Transformation width='50' height='50' crop="fit"/>
           </Image>

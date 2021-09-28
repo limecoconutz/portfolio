@@ -1,22 +1,20 @@
+import Slider from "react-slick";
+
 import MyProjects from "../data/myProjects";
 import ProjectCard from "../components/ProjectCard";
 import '../stylesheets/pages/MyProjectsPage.scss';
-import Slider from "react-slick";
 
 function MyProjectsPage() {
       const settings = {
       className: "center",
       centerMode: true,
       infinite: true,
-      // fade: true,
       centerPadding: "60px",
       slidesToShow: 2,
       speed: 500,
       dots: true,
       appendDots: dots => (
-        <div
-          style={{}}
-        >
+        <div>
           <ul style={{ margin: "0px"}}> {dots} </ul>
         </div>
       ),

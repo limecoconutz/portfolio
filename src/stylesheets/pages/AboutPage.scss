@@ -37,7 +37,6 @@
 
 .scroll-area-infos-elem {
   display: flex;
-  // margin: auto;
 }
 
 .scroll-area-infos-elem:first-child {
@@ -109,8 +108,6 @@
 }
 
 .about-notes {
-  // position: absolute;
-  // bottom: 100px;
   right: 0;
 }
 
@@ -140,13 +137,10 @@
 }
 
 .scroll-area-btn {
-  // margin-top: 60px;
-  // scroll-snap-align: start;
   color: inherit;
   padding: 6px;
   font-size: 3rem;
 }
-
 
 a {
   text-decoration: none;

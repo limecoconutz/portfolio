@@ -1,11 +1,11 @@
-// import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import {Link,  animateScroll as scroll} from 'react-scroll'
+import {animateScroll as scroll} from 'react-scroll'
+import {Image} from 'cloudinary-react';
+
+import {storyTravel, storyDev, storyFreeTime} from '../data/story';
+import ScrollAreaStory from '../components/ScrollAreaStory';
 import '../stylesheets/pages/AboutPage.scss';
 import colors from '../stylesheets/components/_colors.module.scss';
-import {storyTravel, storyDev, storyFreeTime} from '../data/story';
-import AboutList from '../components/AboutList';
-import ScrollAreaStory from '../components/ScrollAreaStory';
-import {Image, Transformation} from 'cloudinary-react';
+
 const cloudName = 'dw4xhagfa';
 
 function AboutPage() {

@@ -1,5 +1,5 @@
+import {Image} from 'cloudinary-react';
 import AboutList from "./AboutList";
-import {Image, Transformation} from 'cloudinary-react';
 const cloudName = 'dw4xhagfa';
 
 function ScrollAreaStory ({img, title, subtitle, story}){
@@ -15,7 +15,6 @@ function ScrollAreaStory ({img, title, subtitle, story}){
         upload_preset="ml_default" 
         publicId={img}
         />
-        // <img className="scroll-area-icon-medium" src={img} alt="icon"/>
         : ''
       }
       {
@@ -37,14 +36,3 @@ function ScrollAreaStory ({img, title, subtitle, story}){
 }
 
 export default ScrollAreaStory;
-{/* OR */}
-    //           <div className="scroll-area-infos-elem">
-    //             <img className="scroll-area-icon-medium"src="" alt=""/>
-    //             <h2 className="title scroll-area-title"></h2>
-    //           </div>
-    //             <AboutList story={storyTravel}/>
-    //             {/* OR */}
-    //             <div className="scroll-area-infos-elem">
-    //             <h3 className="title scroll-area-title"></h3>
-    //           </div>
-    //           <AboutList story={storyFreeTime}/>
